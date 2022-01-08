@@ -1,0 +1,25 @@
+$text: rgb(112, 168, 245);
+$background: rgb(26, 53, 91);
+
+body {
+  font: {
+    family: Roboto;
+    style: normal;
+    weight: 400;
+    size: 16px;
+  }
+  line-height: 1.5;
+  color: $text;
+  min-width: 320px;
+  background-color: $background;
+}
+
+.container {
+  width: min(100%, 1368px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}

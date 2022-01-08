@@ -1,0 +1,89 @@
+//***************colors******************
+$black: #000;
+$black50: #909090;
+$black25: #E9E9E9;
+$gray: #FAF9F9;
+$blue: #5A60E7;
+
+//*************font style****************
+%norm-font-style {
+    font: {
+        family: "Proxima Nova Rg";
+        style: normal;
+        weight: normal;
+    }
+}
+%bold-font-style {
+    font: {
+        family: "Proxima Nova Sb";
+        style: normal;
+        weight: 600;
+    }
+}
+%norm-font-size {
+    font-size: 16px;
+    line-height: 110%;
+}
+%big-font-size {
+    font-size: 30px;
+    line-height: 140%;
+}
+%small-font-size {
+    font-size: 12px;
+    line-height: 110%;
+}
+// norm fonts
+@mixin main-font-norm {
+    @extend %norm-font-style;
+    @extend %norm-font-size;
+}
+@mixin main-font-bold {
+    @extend %bold-font-style;
+    @extend %norm-font-size;
+}
+// big fonts
+@mixin big-font-norm {
+    @extend %norm-font-style;
+    @extend %big-font-size;
+}
+@mixin big-font-bold {
+    @extend %bold-font-style;
+    @extend %big-font-size;
+}
+// small fonts
+@mixin small-font-norm {
+    @extend %norm-font-style;
+    @extend %small-font-size;
+}
+@mixin small-font-bold {
+    @extend %bold-font-style;
+    @extend %small-font-size;
+}
+
+//*************** flex/grid **************
+
+%flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flex-center-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+%grid-between-center {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+}
+%grid-between-end {
+    display: grid;
+    justify-content: space-between;
+    align-items: flex-end;
+}

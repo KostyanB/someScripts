@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My gallery</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="icon" type="image/png" href="./image/icon-72x72.png">
+	<script defer src="./js/script.js"></script>
+</head>
+
+<body>
+	<!-- <header>
+		<h2>Responsive photogallery "Like Yandex"</h2>
+		<input type="text" hidden="true">
+		<input type="submit" hidden="true">
+	</header> -->
+    <div id="drop-area">
+			<form class="my-form">
+				<h2>Моя фотогалерея</h2>
+			<p>Загрузите изображения с помощью диалога выбора файлов или перетащив нужные изображения в выделенную область</p>
+			<input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+			<label class="button" for="fileElem">Выбрать изображения</label>
+			</form>
+            <!-- <progress id="progress-bar" max=100 value=0></progress> -->
+            <div id="gallery"></div>
+		</div>
+
+	<div class="page_wrapper">
+		<div class="gallery_wrapper">
+		</div>
+	</div>
+
+</body>
+</html>

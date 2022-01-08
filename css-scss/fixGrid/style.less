@@ -1,0 +1,24 @@
+@import (less) "fixgrid.less";
+
+.grid-settings() {
+    @gutter-width: 60px;
+
+    // media breakpoints
+    @breakpoints:
+        ~"(min-width: 480px)",
+        ~"(min-width: 768px)",
+        ~"(min-width: 992px)",
+        ~"(min-width: 1200px)",
+        ~"(min-width: 1600px)";
+
+    // max-width of containers according breakpoints
+    @container-maw:
+        100%,
+        750px,
+        970px,
+        1170px,
+        1540px;
+
+    // names for breakpoint suffixes
+    @suffixes: xxs, xs, sm, md, lg, xlg;
+}

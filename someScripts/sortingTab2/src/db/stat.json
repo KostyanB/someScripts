@@ -1,0 +1,42 @@
+[
+    {
+        "season": "2021/2020",
+        "games": 5,
+        "goals": 218,
+        "passes": 146,
+        "total": 364,
+        "rate": 89.40
+    },
+    {
+        "season": "2020/2019",
+        "games": 5,
+        "goals": 242,
+        "passes": 122,
+        "total": 364,
+        "rate": 89.40
+    },
+    {
+        "season": "2019/2018",
+        "games": 6,
+        "goals": 173,
+        "passes": 164,
+        "total": 337,
+        "rate": 72.50
+    },
+    {
+        "season": "2018/2017",
+        "games": 7,
+        "goals": 157,
+        "passes": 145,
+        "total": 302,
+        "rate": 93.20
+    },
+    {
+        "season": "2017/2016",
+        "games": 9,
+        "goals": 174,
+        "passes": 102,
+        "total": 276,
+        "rate": 89.40
+    }
+]

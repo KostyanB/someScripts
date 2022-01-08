@@ -1,0 +1,108 @@
+.statistic {
+    max-width: 900px;
+    margin: 10px auto 0;
+    // width: max(900px, 99vw);
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media (max-width: 900px) {
+        width: 95%;
+    }
+
+    @media (max-width: 576px) {
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            height: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $black50;
+            border-radius: 50px;
+        }
+    }
+
+    &__tab {
+        width: 100%;
+        min-width: 430px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        filter: drop-shadow(0px 2px 8px $black25);
+        border-radius: 0px 0px 10px 10px;
+
+        &_header,
+        &_item {
+            grid-template-columns: minmax(145px, 20vw) repeat(5, 1fr);
+            width: 100%;
+            min-width: 430px;
+        }
+
+        &_header {
+            @include small-font-norm;
+            @extend %grid-between-end;
+            width: 100%;
+            height: 40px;
+            background-color: $black25;
+            padding-bottom: 4.5px;
+        }
+
+        &_button,
+        &_item-content {
+            @extend %flex-center-center;
+            justify-self: center;
+            white-space: nowrap;
+
+            &:first-of-type() {
+                justify-self: start;
+                justify-content: flex-start;
+                padding-left: 20px;
+            }
+        }
+
+        &_button {
+            @include small-font-norm;
+            color: $black50;
+            height: 18px;
+
+            &:hover,
+            &:active {
+                color: $blue;
+            }
+        }
+
+        &_item-content {
+            &:last-of-type() {
+                @include main-font-bold;
+                color: $blue;
+            }
+        }
+
+        &_sort {
+            @extend %flex-center-center;
+            flex-direction: column;
+            gap: 2px;
+            width: 18px;
+            height: 18px;
+
+            svg {
+                width: 8px;
+                height: 8px;
+            }
+        }
+
+        &_list {
+            width: 100%;
+        }
+
+        &_item {
+            @extend %grid-between-center;
+            padding-top: 21px;
+            padding-bottom: 21px;
+
+            &:nth-child(even) {
+                background-color: $gray;
+            }
+        }
+    }
+}

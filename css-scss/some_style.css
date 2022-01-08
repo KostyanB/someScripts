@@ -1,0 +1,21 @@
+/* прижать последний флекс -элемент */
+.gallery_wrapper::after {
+    content: "";
+    flex: auto;
+    justify-content: flex-start;
+    flex-grow: 100;
+}
+/* убрать схлопывание родителя при float */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*  отключить тень активной ссылки/кнопки на мобильных */
+:focus, :active {
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
